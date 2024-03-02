@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 200px;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            border: none;
+        }
+
+        legend {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        div.checkbox, div.radio {
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button[type="reset"] {
+            background-color: #f44336;
+            margin-left: 10px;
+        }
+
+        .container1 {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>   
+        <img src="logofinal.png" alt="Logo do TechPortal" class="logo">
+        <ul>
+            <li><a href="paginaprincipal.html">Página principal</a></li>
+            <li><a href="inscricao.html" class="inscricao">Inscrição</a></li>
+            <li><a href="Programação.html">Programação do evento</a></li>
+            <li><a href="Local.html">Local de realização</a></li>
+            <li><a href="Comissão.html">Comissão organizadora</a></li>
+            <li><a href="Curiosidades.html" class="curioso">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <h1>Inscreva-se para o nosso evento gratuito</h1>
+    <form action="Confirmacao.html" method="post">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="prodNome" required>
+        </div>
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required>
+        </div>
+        <div>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+        </div>
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="number" id="telefone" name="telefone" required>
+        </div>
+
+        <div class="container1">
+            <fieldset>
+                <legend>Como conheceu o TechPortal</legend>
+                <div class="radio">
+                    <input type="radio" id="redes-sociais" name="conheceu" value="redes sociais">
+                    <label for="redes-sociais">Redes sociais</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="pesquisa-online" name="conheceu" value="Pesquisa Online (por exemplo, Google, Bing)">
+                    <label for="pesquisa-online">Pesquisa Online (por exemplo, Google, Bing)</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="cartazes-flyers-fisicos" name="conheceu" value="Cartazes/Flyers Físicos">
+                    <label for="cartazes-flyers-fisicos">Cartazes/Flyers Físicos</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="indicacao-amigos-colegas" name="conheceu" value="Indicação de Amigos ou Colegas">
+                    <label for="indicacao-amigos-colegas">Indicação de Amigos ou Colegas</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="outro" name="conheceu" value="Outro">
+                    <label for="outro">Outro</label>
+                </div>
+            </fieldset>
+        </div>
+    
+        <div class="container1">
+            <fieldset>
+                <legend>Atividades que deseja realizar durante o evento gratuito</legend>
+                <div class="checkbox">
+                    <input type="checkbox" id="workshops" name="atividades[]" value="Workshops" checked>
+                    <label for="workshops">Workshops</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="palestras-painel" name="atividades[]" value="Palestras e Painéis">
+                    <label for="palestras-painel">Palestras e Painéis</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="competicoes-programacao" name="atividades[]" value="Competições de Programação">
+                    <label for="competicoes-programacao">Competições de Programação</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="networking" name="atividades[]" value="Networking">
+                    <label for="networking">Networking</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="oficina" name="atividades[]" value="Oficina de prototipagem rapida">
+                    <label for="oficina">Oficina de prototipagem rapida</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="outro-atividades" name="atividades[]" value="Outro">
+                    <label for="outro-atividades">Outro</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="select-group">
+            <label for="tema-preferido">Tema preferido para o evento:</label>
+            <select id="tema-preferido" name="tema-preferido" required>
+                <option value="">Selecione uma opção</option>
+                <option value="tecnologia">Tecnologia</option>
+                <option value="inovação">Inovação</option>
+                <option value="startups">Startups</option>
+                <option value="empreendedorismo">Empreendedorismo</option>
+            </select>
+        </div>
+        
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+
+    <footer>
+        <p>&copy;  2024 - Todos os direitos reservados</p>
+        <p>Entre em contato pelo e-mail: techPortal@email.com</p>
+        <nav>
+            <ul>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Redes sociais</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

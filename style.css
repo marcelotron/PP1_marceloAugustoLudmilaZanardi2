@@ -1,0 +1,308 @@
+html {
+    font-size: 80%;
+}
+
+
+.header-image img {
+    width: 100%;
+    height: 400px;
+}
+
+
+/*logo*/
+
+.logo {
+
+    margin-right: 20px;
+    /* Espaçamento entre a logo e o menu */
+    height: 50px;
+    /* Ajuste o tamanho conforme necessário */
+}
+
+
+/* configuração do menu*/
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#logo {
+    margin-right: 20px;
+    /* Espaçamento entre a logo e o menu */
+    height: 50px;
+    /* Ajuste o tamanho conforme necessário */
+    mix-blend-mode: screen;
+}
+
+
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+
+nav ul li a:active {
+    background-color: #4CAF50;
+}
+
+
+.principal {
+    background-color: #4CAF50;
+}
+
+.inscricao {
+    background-color: #4CAF50;
+}
+
+.programacao {
+    background-color: #4CAF50;
+}
+
+.comissao {
+    background-color: #4CAF50;
+
+}
+
+.local {
+    background-color: #4CAF50;
+
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+/* Config para prog */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* config para comissao */
+
+.organizadores {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.organizador {
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+    color: #4ba14e;
+}
+
+.organizador img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.organizador h2 {
+    margin: 10px 0;
+}
+.tituloorganizacao{
+    font-size: 15px;
+}
+
+
+/* config para local */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery img {
+    width: 30%;
+    margin-bottom: 15px;
+}
+
+/* Estilização do mapa de imagem */
+map area {
+    cursor: pointer;
+}
+
+map area:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.titulorealizacao{
+    font-size: 15px;
+}
+
+
+/* confirmação*/
+
+
+/* Estilos para a mensagem de confirmação */
+.confirmacao {
+    background-color: #f9f9f9;
+    /* Define o fundo */
+    border: 2px solid #333;
+    /* Define as bordas */
+    max-width: 80%;
+    /* Define a largura máxima */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    padding: 20px;
+    /* Adiciona espaçamento interno */
+    text-align: center;
+    /* Centraliza o texto */
+    border-radius: 10px;
+    /* Arredonda as bordas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Adiciona sombra */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*famosos*/
+.container {
+    background-color: gray;
+    box-shadow: 0 10px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* CONFIGURAÇOES PARA TODOS OS CONTAINERS*/
+.objective-container {
+    background-color: #f5f5f5;
+    /* Fundo claro */
+    color: #333;
+    /* Texto escuro */
+    padding: 20px;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    /* Ajuste  */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.participate-container {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.participate-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.participate-button:hover {
+    background-color: #0056b3;
+}
+
+.main-container {
+    background-color: #333;
+    /* Fundo escuro */
+    color: #fff;
+    /* Texto claro */
+    padding: 20px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Alinhamento centralizado */
+}
+
+/*pagina pricipal*/
+.container{
+    p { text-decoration: underline; }
+}
+.objective-container{
+    font-size: 15px;
+}
+.main-container{
+    font-size: 15px;
+}
+.card{
+    font-size: 15px;
+}
+.img{
+    height: 20px;
+    object-fit: cover;
+    width: 20px;
+}
+
+/*programacao/*/
+
+.tituloprogramacao{
+    font-size: 15px;
+}
+/*curiosidades/*/
+.titulocuriosidades{
+    font-size: 15px;
+}
